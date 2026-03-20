@@ -52,7 +52,7 @@ public class CustomerController {
         }
     }
 
-    // 🔹 UPDATE CUSTOMER
+
     @PutMapping(value = "/update", consumes = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<ResponseDTO> updateCustomer(@RequestBody @Valid CustomerDTO customerDTO) {
 
@@ -80,7 +80,7 @@ public class CustomerController {
         }
     }
 
-    // 🔹 DELETE CUSTOMER
+
     @DeleteMapping("/delete/{id}")
     public ResponseEntity<ResponseDTO> deleteCustomer(@PathVariable Long id) {
 
@@ -111,7 +111,7 @@ public class CustomerController {
         }
     }
 
-    // 🔹 GET ALL CUSTOMERS
+
     @GetMapping("/getAll")
     public ResponseEntity<List<CustomerDTO>> getAllCustomers() {
         try {
